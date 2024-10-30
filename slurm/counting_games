@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=counting_games    # Job name
+#SBATCH --output=/home/zrc3hc/Chess/slurm_errors_and_out/count_games.out  # Standard output file
+#SBATCH --error=/home/zrc3hc/Chess/slurm_errors_and_out/count_games.err   # Standard error file
+#SBATCH --nodes=1                           # Request 1 node
+#SBATCH --ntasks=1                          # Request 1 task
+#SBATCH --cpus-per-task=4                   # Request 4 CPU cores
+#SBATCH --time=10:00:00 
+#SBATCH --partition=standard
+
+module load miniforge
+
+python /home/zrc3hc/Chess/0.Parsing_Data_Scripts/count_games.py
+
