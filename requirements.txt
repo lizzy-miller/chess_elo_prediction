@@ -1,0 +1,9 @@
+pandas
+requests
+chess == 1.9.1
+pyspark == 3.3.0
+zstandard
+shutil
+os
+json
+io
